@@ -1,10 +1,91 @@
 <!DOCTYPE html>
-<html lang="pl">
-	<head>
-		<script src="exJsPartB.js"></script>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Zjazd nr 4</title>
-	</head>
-	<body></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Domowe Zadania</title>
+</head>
+<body>
+<!-- Zadanie 1 -->
+<div class="task-container">
+  <div class="task1" id="task1">
+    <div class="task1-div"></div>
+    <div class="task1-div"></div>
+    <div class="task1-div"></div>
+    <div class="task1-div"></div>
+  </div>
+  <button onclick="addDiv()">Dodaj div</button>
+  <button onclick="removeDiv()">Usuń div</button>
+  <button onclick="changeColor()">Zmień kolor diva 3</button>
+  <button onclick="changeText()">Zmień tekst</button>
+</div>
+
+<!-- Zadanie 2 -->
+<div class="task-container">
+  <div class="calculator">
+    <input type="number" id="num1" placeholder="Wprowadź liczbę">
+    <select id="operation">
+      <option value="add">Dodawanie</option>
+      <option value="subtract">Odejmowanie</option>
+      <option value="multiply">Mnożenie</option>
+      <option value="divide">Dzielenie</option>
+    </select>
+    <input type="number" id="num2" placeholder="Wprowadź liczbę">
+    <button onclick="calculate()">Oblicz</button>
+    <p id="result"></p>
+  </div>
+</div>
+<script src="task2.js"></script>
+
+<!-- Zadanie 3 -->
+<div class="task-container">
+  <table id="carTable" border="1"></table>
+</div>
+<script src="task3.js"></script>
+
+<!-- Zadanie 4 -->
+<div class="task-container">
+  <div class="navbar">
+    <div class="logo">Logo</div>
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+</div>
+<script src="task4.js"></script>
+
+<!-- Zadanie 5 -->
+<div class="task-container">
+  <div class="accordion">
+    <div class="item" onclick="toggleItem(1)">Item 1</div>
+    <div class="content" id="item1Content">Treść dla Item 1</div>
+
+    <div class="item" onclick="toggleItem(2)">Item 2</div>
+    <div class="content" id="item2Content">Treść dla Item 2</div>
+  </div>
+</div>
+<script src="task5.js"></script>
+
+<!-- Zadanie 6 -->
+<div class="task-container">
+  <div class="gallery">
+    <img src="image1.jpg" alt="Image 1" onclick="openModal('image1.jpg')">
+    <img src="image2.jpg" alt="Image 2" onclick="openModal('image2.jpg')">
+    <img src="image3.jpg" alt="Image 3" onclick="openModal('image3.jpg')">
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+</div>
+<script src="task6.js"></script>
+
+<script src="task1.js"></script>
+</body>
 </html>
